@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE book>
+<main>
+   <title>Книга</title>
+     <book>
+          <name>Аристократия</name>
+          <seria>Позитив</seria>
+          <autor>Балконский</autor>
+          <age>16+</age>
+          <format>epub</format>
+          <pages>200</pages>
+          <illust>10</illust>
+	  <price>50</price>
+      </book>
+     <book>
+          <name>Аскетизм</name>
+          <seria>Позитив</seria>
+          <autor>Безалконский</autor>
+          <age>18+</age>
+          <format>epub</format>
+          <pages>100</pages>
+          <illust>0</illust>
+	  <price>100</price>
+      </book>
+
+
+
+<instructions>
+  <step>выбрать книгу</step>
+  <step>выбрать версию</step>
+  <step>выбрать оплату</step>
+  <step>купить</step>
+ </instructions>
+</main>
