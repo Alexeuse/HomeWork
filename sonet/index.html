@@ -18,15 +18,30 @@
 
 <body>
     <h1>Войти</h1>
-    <label>Введите E-mail:
+    <label>
+        <p>Введите E-mail:</p>
         <input name="email" id="E-mail" placeholder="example@gmail.com" required>
-        Пароль:
+        <p>Пароль:</p>
         <input type="password" required>
     </label>
     <form action="files/feed.html" target="_blank">
         <button type="submit">Войти</button>
     </form>
     <h1>Регистрация</h1>
+    <label>
+        <p>Имя*</p>
+        <input type="text" id="name" required>
+        <p>E-mail*</p>
+        <input type="text" id="email" required>
+        <p>Пароль*</p>
+        <input type="text" id="pass1" required>
+        <p>Подтверждение пароля*</p>
+        <input type="text" id="pass2" required>
+        <p>Согласие с обработкой персональных данных <input type="checkbox" id="scales" name="scales" required></p>
+    </label>
+    <form action="files/feed.html" target="_blank">
+        <button type="submit">Зарегистрироваться</button>
+    </form>
 </body>
 
 </html>
