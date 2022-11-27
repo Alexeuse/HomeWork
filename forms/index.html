@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Форма заказа пиццы</title>
 </head>
 <body>
+<form name="pizza_form" method="POST" action="">
    <h1>Форма заказа пиццы</h1>
    <p>Выберите пиццу:</p>
    <select name="pizza" required="required">
-    <option name="Margo">Маргарита</option>
-    <option name="Season">4сезона</option>
-    <option name="Chicken cheese">Сырный цыпленок</option>
+    <option value="Margo">Маргарита</option>
+    <option value="Season">4сезона</option>
+    <option value="Chicken cheese">Сырный цыпленок</option>
    </select>
    <p>Выберите основу:</p>
-   <p><input type="radio" name="osnova">Тонкий край<input type="radio" name="osnova"> толстый край</p>
+   <p><input type="radio" name="osnova" checked>Тонкий край<input type="radio" name="osnova"> толстый край</p>
    <p><input name="razrezat" type="checkbox">Разрезать пиццу</p>
 <p>Номер телефона для связи<input name="phone" type="text" required></p>
 <p>Адрес доставки<input name="address"type="text" required></p>
 <p>Дополнительные пожелания</p><p><TEXTAREA style="height:50px">Время доставки, код домофона и пр.</TEXTAREA></p>
 <input type="submit" value="Заказать">
+</form>
 </body>
 </html>
