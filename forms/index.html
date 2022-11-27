@@ -23,46 +23,64 @@
         <p>Номер телефона для связи<input name="phone" type="text" required></p>
         <p>Адрес доставки<input name="address" type="text" required></p>
         <p>Дополнительные пожелания</p>
-        <p><TEXTAREA style="height:50px">Время доставки, код домофона и пр.</TEXTAREA></p>
+        <p><textarea style="height:50px">Время доставки, код домофона и пр.</textarea></p>
         <input type="submit" value="Заказать">
-        <form name="resrant_form" method="POST" action="">
-            <h1>Анкета посетителя ресторана</h1>
-            <fieldset>
-                <legend>Контактная информация</legend>
-                <label>Имя <input type="text"></label>
-                <label>Телефон <input type="text"></label>
-                <label>Email <input type="email"></label>
-                <label>Дата посещения <input type="date"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Персональная информация</legend>
-                <label>Возраст<input type="number" min="1" max="100" step="1">
-                    <p>Любимая кухня
-                        <select mane="kitchen" required="required">
-                            <option value="rus">Русская</option>
-                            <option value="ukr">Украинская</option>
-                            <option value="ch">Китаяская</option>
-                        </select>
-                    </p>
-                    Какие блюда Вы хотели бы увидеть в меню?
-                    <TEXTAREA style="height:50px"></TEXTAREA>
-            </fieldset>
-            <fieldset>
-                <legend>Оценка нашего заведения</legend>
-                <label>
-                    <p>Почему Вы выбрали наше заведение</p>
-                    <p><input type="radio" name="why">Недалеко от дома/работы</p>
-                    <p><input type="radio" name="why">Увидел рекламу</p>
-                    <p><input type="radio" name="why">Посоветовали</p>
-                    <p><input type="radio" name="why">Оптимальное соотношение цены и качества</p>
-                    <p>Вы будете рекомендовать наше заведение своим знакомым?</p>
-                    <p><input type="radio" name="yesno">Да</p>
-                    <p><input type="radio" name="yesno">Нет</p>
-                </label>
-            </fieldset>
-            <input type="submit" value="Отправить">
-        </form>
     </form>
+    <form name="resrant_form" method="POST" action="">
+        <h1>Анкета посетителя ресторана</h1>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label>Имя <input type="text"></label>
+            <label>Телефон <input type="text"></label>
+            <label>Email <input type="email"></label>
+            <label>Дата посещения <input type="date"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label>Возраст<input type="number" min="1" max="100" step="1">
+                <p>Любимая кухня
+                    <select mane="kitchen" required="required">
+                        <option value="rus">Русская</option>
+                        <option value="ukr">Украинская</option>
+                        <option value="ch">Китаяская</option>
+                    </select>
+                </p>
+                Какие блюда Вы хотели бы увидеть в меню?
+                <TEXTAREA style="height:50px"></TEXTAREA>
+        </fieldset>
+        <fieldset>
+            <legend>Оценка нашего заведения</legend>
+            <label>
+                <p>Почему Вы выбрали наше заведение</p>
+                <p><input type="radio" name="why">Недалеко от дома/работы</p>
+                <p><input type="radio" name="why">Увидел рекламу</p>
+                <p><input type="radio" name="why">Посоветовали</p>
+                <p><input type="radio" name="why">Оптимальное соотношение цены и качества</p>
+                <p>Вы будете рекомендовать наше заведение своим знакомым?</p>
+                <p><input type="radio" name="yesno">Да</p>
+                <p><input type="radio" name="yesno">Нет</p>
+            </label>
+        </fieldset>
+        <input type="submit" value="Отправить">
+    </form>
+
+    <form name="otziv" method="POST" action="">
+        <fieldset>
+            <legend>Форма отзыва на товар</legend>
+            <p>Имя<input name="имя" type="text"></p>
+            <p>Email<input name="мэил" type="email"></p>
+            <p>Оцените нас от 1 до 5 звезд
+                <input name="rating" value="5" id="rating_5" type="radio" />
+                <input name="rating" value="4" id="rating_4" type="radio" />
+                <input name="rating" value="3" id="rating_3" type="radio" />
+                <input name="rating" value="2" id="rating_2" type="radio" />
+                <input name="rating" value="1" id="rating_1" type="radio" />
+            <p>Отзыв<textarea style="height:50px"></textarea></p>
+        </fieldset>
+    </form>
+
+
+
 </body>
 
 </html>
