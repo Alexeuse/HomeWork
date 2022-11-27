@@ -37,7 +37,8 @@
         </fieldset>
         <fieldset>
             <legend>Персональная информация</legend>
-            <label>Возраст<input type="number" min="1" max="100" step="1">
+            <label>Возраст<input type="number" min="1" max="100" step="1"></label>
+            <label>
                 <p>Любимая кухня
                     <select mane="kitchen" required="required">
                         <option value="rus">Русская</option>
@@ -45,8 +46,9 @@
                         <option value="ch">Китаяская</option>
                     </select>
                 </p>
-                Какие блюда Вы хотели бы увидеть в меню?
-                <TEXTAREA style="height:50px"></TEXTAREA>
+            </label>
+            Какие блюда Вы хотели бы увидеть в меню?
+            <textarea style="height:50px"></textarea>
         </fieldset>
         <fieldset>
             <legend>Оценка нашего заведения</legend>
@@ -56,6 +58,8 @@
                 <p><input type="radio" name="why">Увидел рекламу</p>
                 <p><input type="radio" name="why">Посоветовали</p>
                 <p><input type="radio" name="why">Оптимальное соотношение цены и качества</p>
+            </label>
+            <label>
                 <p>Вы будете рекомендовать наше заведение своим знакомым?</p>
                 <p><input type="radio" name="yesno">Да</p>
                 <p><input type="radio" name="yesno">Нет</p>
@@ -67,8 +71,8 @@
     <form name="otziv" method="POST" action="">
         <fieldset>
             <legend>Форма отзыва на товар</legend>
-            <p>Имя<input name="имя" type="text"></p>
-            <p>Email<input name="мэил" type="email"></p>
+            <p>Имя<input name="user" type="text"></p>
+            <p>Email<input name="mail" type="email"></p>
             <p>Оцените нас от 1 до 5 звезд
                 <input name="rating" value="5" id="rating_5" type="radio" />
                 <input name="rating" value="4" id="rating_4" type="radio" />
@@ -76,6 +80,22 @@
                 <input name="rating" value="2" id="rating_2" type="radio" />
                 <input name="rating" value="1" id="rating_1" type="radio" />
             <p>Отзыв<textarea style="height:50px"></textarea></p>
+        </fieldset>
+    </form>
+
+    <form name="form2" method="post">
+        <fieldset>
+            <label><p>Ваши имя и фамилия<input id="name+second" type="text" required pattern="[A-Za-zА-Яа-яЁё]*\s[A-Za-zА-Яа-яЁё]"></p></label>
+            <label><p>Введите логин для сайта (на английском)<input id="userlogin" type="text" required pattern="^[a-zA-Z]+$"></p></label>
+            <label>
+                <p>Кто вы:</p>
+                <p><input type="radio" name="man">М
+                <input type="radio" name="woman">Ж</p>
+            </label>
+            <label><p>Введите дату рождения<input type="date" required></p></label>
+            <label><p>Email:<input type="email" required pattern="[A-Za-zА-Яа-яЁё]*@[A-Za-zА-Яа-яЁё]*\.[A-Za-zА-Яа-яЁё]{2,7}"></p> </label>
+            <label><p>Website(URL):<input type="url" required pattern="[A-Za-zА-Яа-яЁё]"></p> </label>
+            <p><input type="submit" value="Отправить"></p>
         </fieldset>
     </form>
 
