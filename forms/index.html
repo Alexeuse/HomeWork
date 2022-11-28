@@ -85,16 +85,32 @@
 
     <form name="form2" method="post">
         <fieldset>
-            <label><p>Ваши имя и фамилия<input id="name+second" type="text" required pattern="[A-Za-zА-Яа-яЁё]*\s[A-Za-zА-Яа-яЁё]"></p></label>
-            <label><p>Введите логин для сайта (на английском)<input id="userlogin" type="text" required pattern="^[a-zA-Z]+$"></p></label>
+            <label>
+                <p>Ваши имя и фамилия<input id="secondn" type="text" required pattern="[A-Za-zА-Яа-яЁё\s]{3,20}"></p>
+            </label>
+            <label>
+                <p>Введите логин для сайта (на английском)<input id="userlogin" type="text" required
+                        pattern="[a-zA-Z]{3,8}"></p>
+            </label>
             <label>
                 <p>Кто вы:</p>
                 <p><input type="radio" name="man">М
-                <input type="radio" name="woman">Ж</p>
+                    <input type="radio" name="woman">Ж
+                </p>
             </label>
-            <label><p>Введите дату рождения<input type="date" required></p></label>
-            <label><p>Email:<input type="email" required pattern="[A-Za-zА-Яа-яЁё]*@[A-Za-zА-Яа-яЁё]*\.[A-Za-zА-Яа-яЁё]{2,7}"></p> </label>
-            <label><p>Website(URL):<input type="url" required pattern="[A-Za-zА-Яа-яЁё]"></p> </label>
+            <label>
+                <p>Введите дату рождения<input type="date" required></p>
+            </label>
+            <label>
+                <p>Email:<input type="email" required></p>
+            </label>
+            <label>
+                <p>Website(URL):<input type="url" required list="defaulturl"></p>
+            </label>
+            <datalist id="defaulturl">
+                <option value="http://"></option>
+                <option value="https://"></option>
+            </datalist>
             <p><input type="submit" value="Отправить"></p>
         </fieldset>
     </form>
