@@ -1,0 +1,25 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+}
+.a4 {
+    height: 297mm;
+    width: 210mm;
+    border: 3px solid rgb(0, 0, 0);
+}
+.Sh {
+    margin-top: 21mm;
+    margin-left: 45mm;
+    margin-right: 30mm;
+    /* height: 11mm; */
+    /* width: 133mm; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    border: 3px solid rgb(0, 0, 0);
+
+}
+.bc {
+    text-transform: uppercase;
+    font-weight:bold;
+    text-align:center;
+}
