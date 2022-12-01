@@ -2,12 +2,16 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
 }
+
 .a4 {
+    position: relative;
     height: 297mm;
     width: 210mm;
     border: 3px solid rgb(0, 0, 0);
 }
+
 .Sh {
+    position: absolute;
     margin-top: 21mm;
     margin-left: 45mm;
     margin-right: 30mm;
@@ -15,11 +19,55 @@ body {
     /* width: 133mm; */
     /* margin-left: auto; */
     /* margin-right: auto; */
-    border: 3px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 
 }
+
+.cen {
+    position: absolute;
+    margin-top: 116mm;
+    margin-left: 49mm;
+    margin-right: 33mm;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.asp {
+    position: absolute;
+    margin-top: 180mm;
+    margin-left: 100mm;
+    margin-right: 22mm;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.mins {
+    position: absolute;
+    margin-top: 252mm;
+    margin-left: 100mm;
+    margin-right: 84mm;
+    border: 1px solid rgb(0, 0, 0);
+}
+
 .bc {
     text-transform: uppercase;
-    font-weight:bold;
-    text-align:center;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+}
+
+.cent {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5mm;
+}
+
+.lef {
+    text-align: left;
+    font-size: 15pt;
+    margin-top: 0;
+}
+
+.unl {
+    text-decoration: underline;
+
 }
