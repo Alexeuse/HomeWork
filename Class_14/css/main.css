@@ -1,13 +1,15 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14pt;
+    margin: 0;
+    padding: 0;
 }
 
 .a4 {
     position: relative;
     height: 297mm;
     width: 210mm;
-    border: 3px solid rgb(0, 0, 0);
+    border: 1px solid black;
 }
 
 .Sh {
@@ -19,7 +21,7 @@ body {
     /* width: 133mm; */
     /* margin-left: auto; */
     /* margin-right: auto; */
-    border: 1px solid rgb(0, 0, 0);
+    /*border: 1px solid rgb(0, 0, 0);*/
 
 }
 
@@ -28,7 +30,7 @@ body {
     margin-top: 116mm;
     margin-left: 49mm;
     margin-right: 33mm;
-    border: 1px solid rgb(0, 0, 0);
+    /*border: 1px solid rgb(0, 0, 0);*/
 
 }
 
@@ -37,7 +39,7 @@ body {
     margin-top: 180mm;
     margin-left: 100mm;
     margin-right: 22mm;
-    border: 1px solid rgb(0, 0, 0);
+    /*border: 1px solid rgb(0, 0, 0);*/
 }
 
 .mins {
@@ -45,7 +47,7 @@ body {
     margin-top: 252mm;
     margin-left: 100mm;
     margin-right: 84mm;
-    border: 1px solid rgb(0, 0, 0);
+    /*border: 1px solid rgb(0, 0, 0);*/
 }
 
 .bc {
