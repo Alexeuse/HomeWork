@@ -14,7 +14,7 @@
 
 <body>
 
-    <nav role="navigation">
+    <div class="block">
         <ul>
             <li>Бытовая техника
                 <ul>
@@ -48,7 +48,43 @@
             </li>
             <li>Корзина</li>
         </ul>
-    </nav>
+    </div>
+    <div class="forma">
+
+        <p>Фамилия и имя*</p>
+        <input type="text" id="fullname" required>
+        <p>Номер телефона*</p>
+        <input type="number" id="tel_num" required>
+        <p>E-mail*</p>
+        <input type="text" id="email" required>
+
+
+        <p>Выберите способ доставки:<br>
+            * Самовывоз со склада по адресу **адрес**<input id="map" type="checkbox"></p>
+       
+            <div class="yandex">                  
+                    <iframe src="https://yandex.by/map-widget/v1/-/CCUnBIdYsB" width="560" height="400"
+                    ></iframe>
+            <p>* Курьером по Минску</p>
+            <p> * Комментарий к заказу</p>
+
+            <p>* "Я прочитал и согласен с [условиями доставки](#)"</p> 
+                
+            <input type="button" value="Подтвердить заказ">
+
+
+        </div>
+
+    </div>
+    <footer>
+        <ul class="foot">
+            <li class="foot">работы магазина</li>
+            <li class="foot">адрес офиса</li>
+            <li class="foot">телефоны</li>
+            <li class="foot">skype</li>
+        </ul>
+    </footer>
+
 </body>
 <footer></footer>
 
