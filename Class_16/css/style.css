@@ -1,8 +1,4 @@
-a {
-  text-decoration: none;
-}
-
-
+/* 
 ul {
   background: rgb(184, 137, 236);
   list-style: none;
@@ -22,20 +18,83 @@ li {
 
 
 li:hover {
-  background: rgb(146, 111, 245);
+  background: rgba(86, 182, 247, 0.76);
   cursor: pointer;
 }
 
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+ */
+nav {
+  display: block;
+  width: 100%;
+  margin: 0 auto 10%;
+}
 
+a.hor_menu {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  border-right: 1px solid #ADC0CE;
+  background: rgba(199, 115, 248, 0.3);
+  color: #000000;
+}
 
-ul li ul {
-  background: rgb(101, 15, 214);
-  visibility: hidden;
+ul.hor_menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background: #1a6c8a;
+  overflow: hidden;
+  padding: 0;
+}
+
+.hor_menu a:hover {
+  background: #ADC0CE
+}
+
+li.hor_menu {
+  float: left;
+}
+
+ul.ver_menu {
+  list-style: none;
+  padding-left: 0;
+  background: #1a8a65;
+  overflow: hidden;
   opacity: 0;
   min-width: 5rem;
   position: absolute;
-  margin-top: 1rem;
-  left: 0;
+  margin-top: 0;
+  left: 8px;
+  display: none;
+}
+
+ul.ver_menu2 {
+  list-style: none;
+  padding-left: 0;
+  background: #1a8a65;
+  overflow: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  margin-top: 0;
+  left: 154px;
+  display: none;
+}
+
+ul.ver_menu3 {
+  list-style: none;
+  padding-left: 0;
+  background: #1a8a65;
+  overflow: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  margin-top: 0;
+  left: 315px;
   display: none;
 }
 
@@ -45,34 +104,18 @@ ul li:hover>ul {
   display: block;
 }
 
-ul li ul li {
-  clear: both;
-  width: 100%;
+
+
+
+
+
+
+
+.goog {
+  display: none;
+
 }
 
-.block {
+.map:checked~.goog {
   display: block;
-  width: 100%;
 }
-
-.forma {
-  display: block;
-  margin: 15% 0 0 0;
-}
-.yandex {
-  display:none;
-
-}
-.input:checked + div {
-  display:contents;
-}
-
-
-#map:checked~.yandex{
-  display:contents;
-}
-
-
-
- 
- 

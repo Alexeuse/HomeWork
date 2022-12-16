@@ -13,41 +13,42 @@
 </header>
 
 <body>
-
-    <div class="block">
-        <ul>
-            <li>Бытовая техника
-                <ul>
-                    <li>Стиральные машины</li>
-                    <li>Пылесосы</li>
-                    <li>Швейные, вышивальные машины</li>
-                    <li>Утюги</li>
-                    <li>Электровеники</li>
-                    <li>Сушилки для обуви</li>
-                </ul>
-            </li>
-            <li>Техника для кухни
-                <ul>
-                    <li>Холодильники </li>
-                    <li>Кухонные плиты</li>
-                    <li>Морозильники</li>
-                    <li>Настольные плиты</li>
-                    <li>Ростеры, мини-печи</li>
-                    <li>Вытяжки</li>
-                    <li>Микроволновые печи</li>
-                </ul>
-            </li>
-            <li>Компьютерная техника
-                <ul>
-                    <li>Ноутбуки</li>
-                    <li>Планшеты </li>
-                    <li>Компьютеры, моноблоки</li>
-                    <li>Игровые приставки</li>
-                    <li>Серверное оборудование</li>
-                </ul>
-            </li>
-            <li>Корзина</li>
-        </ul>
+    <nav>
+        <div class="block">
+            <ul class="hor_menu">
+                <li class="hor_menu"><a class="hor_menu" href="#">Бытовая техника</a>
+                    <ul class="ver_menu">
+                        <li><a class="hor_menu" href="#">Стиральные машины</a></li>
+                        <li><a class="hor_menu" href="#">Пылесосы</a></li>
+                        <li><a class="hor_menu" href="#">Швейные, вышивальные машины</a></li>
+                        <li><a class="hor_menu" href="#">Утюги</a></li>
+                        <li><a class="hor_menu" href="#">Электровеники</a></li>
+                        <li><a class="hor_menu" href="#">Сушилки для обуви</a></li>
+                    </ul>
+                </li>
+                <li class="hor_menu"><a class="hor_menu" href="#">Техника для кухни</a>
+                    <ul class="ver_menu2">
+                        <li><a class="hor_menu" href="#">Холодильники </a></li>
+                        <li><a class="hor_menu" href="#">Кухонные плиты</a></li>
+                        <li><a class="hor_menu" href="#">Морозильники</a></li>
+                        <li><a class="hor_menu" href="#">Настольные плиты</a></li>
+                        <li><a class="hor_menu" href="#">Ростеры, мини-печи</a></li>
+                        <li><a class="hor_menu" href="#">Вытяжки</a></li>
+                        <li><a class="hor_menu" href="#">Микроволновые печи</a></li>
+                    </ul>
+                </li>
+                <li class="hor_menu"><a class="hor_menu" href="#">Компьютерная техника</a>
+                    <ul class="ver_menu3">
+                        <li><a class="hor_menu" href="#">Ноутбуки</a></li>
+                        <li><a class="hor_menu" href="#">Планшеты </a></li>
+                        <li><a class="hor_menu" href="#">Компьютеры, моноблоки</a></li>
+                        <li><a class="hor_menu" href="#">Игровые приставки</a></li>
+                        <li><a class="hor_menu" href="#">Серверное оборудование</a></li>
+                    </ul>
+                </li>
+                <li class="hor_menu"><a class="hor_menu" href="#">Корзина</a></li>
+            </ul>
+    </nav>
     </div>
     <div class="forma">
 
@@ -60,20 +61,27 @@
 
 
         <p>Выберите способ доставки:<br>
-            * Самовывоз со склада по адресу **адрес**<input id="map" type="checkbox"></p>
-       
-            <div class="yandex">                  
-                    <iframe src="https://yandex.by/map-widget/v1/-/CCUnBIdYsB" width="560" height="400"
-                    ></iframe>
-            <p>* Курьером по Минску</p>
-            <p> * Комментарий к заказу</p>
 
-            <p>* "Я прочитал и согласен с [условиями доставки](#)"</p> 
-                
-            <input type="button" value="Подтвердить заказ">
-
+            <input type="radio" name="chan"> * Самовывоз со склада по адресу  **адрес**
+        </p>
+        <input type="checkbox" class="map" >
+        <div class="goog">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1661.4862912110548!2d27.577257879663783!3d53.91936984988347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1671200761195!5m2!1sru!2sby"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
+
+        <p><input type="radio" name="chan">* Курьером по Минску</p>
+        <p> * Комментарий к заказу</p>
+
+        <p>* "Я прочитал и согласен с [условиями доставки](#)"</p>
+
+        <input type="button" value="Подтвердить заказ">
+
+
+
 
     </div>
     <footer>
