@@ -125,15 +125,16 @@ opacity: 0;
   display: block;
 }
 .allright {
-  display: none;
-  
+  opacity: 0.5;
+    
 }
-.read{
+#read{
   position: absolute;
-  margin: -30px 0 0 370px;
+  margin: -30px 0 0 350px; 
 }
-.read:checked~.allright{
-  display: block;
+
+#read:checked~ .allright{
+  opacity: 1;
 }
 .lab1 {
   cursor: pointer;
