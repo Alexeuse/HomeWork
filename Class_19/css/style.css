@@ -3,6 +3,7 @@
     margin: 10% auto 10% auto;
     width: 100%;
 }
+
 .top {
     display: block;
     background-image: url(../img/sky.jpg);
@@ -11,6 +12,7 @@
     background-repeat: repeat-x;
     background-size: 200px;
 }
+
 .medl {
     background-image: url(../img/sun.png);
     display: block;
@@ -19,10 +21,45 @@
     background-repeat: no-repeat;
     background-size: 200px;
 }
+
 .bot {
     background-image: url(../img/sea.jpg);
     height: 1080px;
     background-repeat: no-repeat;
     display: block;
     background-size: 100%;
+}
+
+/* LIKE */
+.like {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    /* margin: -20% 0 0 0; */
+    width: 40px;
+}
+
+a.color {
+    font-size: 500%;
+    color: grey;
+    text-decoration: none;
+}
+
+a.color:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+a.color:active {
+    color: rgb(0, 174, 255);
+}
+
+a.color:visited {
+    color: rgb(255, 0, 0);
+
+}
+
+.like:hover {
+    opacity: 0.3;
 }
