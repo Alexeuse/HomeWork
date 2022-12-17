@@ -36,7 +36,6 @@
     position: absolute;
     left: 50%;
     top: 40%;
-    /* margin: -20% 0 0 0; */
     width: 40px;
 }
 
@@ -57,9 +56,44 @@ a.color:active {
 
 a.color:visited {
     color: rgb(255, 0, 0);
-
 }
 
 .like:hover {
     opacity: 0.3;
+}
+
+/* CHECKBOX */
+.block {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.block2 {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    z-index: 1;
+    display: none;
+}
+
+.im {
+    width: 200px;
+    height: 200px;
+}
+
+.im_em {
+    width: 200px;
+    height: 200px;
+}
+
+#click {
+    position: absolute;
+    top: 80%;
+    left: 2%;
+    display: none;
+}
+
+#click:checked~.block2 {
+    display: block;
 }
