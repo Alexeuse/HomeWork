@@ -53,18 +53,20 @@
     <div class="forma">
 
         <p>Фамилия и имя*</p>
-        <input type="text" id="fullname" required>
+        <input type="text" name="full_name" required>
         <p>Номер телефона*</p>
-        <input type="number" id="tel_num" required>
+        <input name="phone_number" placeholder="+375 (29) 123-45-67"
+            pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
         <p>E-mail*</p>
-        <input type="text" id="email" required>
+        <input type="text" name="email" required>
 
 
-        <p>Выберите способ доставки:<br>
+        <p>Выберите способ доставки:</p>
 
-            <input type="radio" name="chan"> * Самовывоз со склада по адресу  **адрес**
-        </p>
-        <input type="checkbox" class="map" >
+        <input type="radio" name="chan"> * Самовывоз со склада по адресу <input type="checkbox" id="chmap"> <label
+            for="chmap" class="lab1" type="checkbox">Комаровский</label>
+
+
         <div class="goog">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1661.4862912110548!2d27.577257879663783!3d53.91936984988347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1671200761195!5m2!1sru!2sby"
@@ -78,7 +80,7 @@
 
         <p>* "Я прочитал и согласен с [условиями доставки](#)" </p>
 
-       
+
         <input type="checkbox" class="read">
         <input type="button" class="allright" value="Подтвердить заказ">
 

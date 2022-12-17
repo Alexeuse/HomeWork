@@ -113,16 +113,15 @@ ul li:hover>ul {
 
 .goog {
   display: none;
+}
+#chmap {
+opacity: 0;
+}
 
-}
 .map{
-  position: absolute;
-  left: 290px;
-  top: 500px;
-  opacity: 0;
-  transform:scaleX(5);
+  
 }
-.map:checked~.goog {
+#chmap:checked~.goog {
   display: block;
 }
 .allright {
@@ -135,4 +134,7 @@ ul li:hover>ul {
 }
 .read:checked~.allright{
   display: block;
+}
+.lab1 {
+  cursor: pointer;
 }
