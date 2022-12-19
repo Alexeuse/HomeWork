@@ -1,0 +1,40 @@
+nav {
+    display: block;
+    width: 100%;
+    margin: 0 auto 10%;
+  }
+  
+  a.hor_menu {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    border-right: 1px solid #ADC0CE;
+    background: rgba(199, 115, 248, 0.3);
+    color: #000000;
+  }
+  
+  ul.hor_menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    background: #1a6c8a;
+    overflow: hidden;
+    padding: 0;
+  }
+  .hor_menu a:hover {
+    background: #ADC0CE
+  }
+  
+  li.hor_menu {
+    float: right;
+  }
+  li.hor_menuL {
+    float: left;
+  }
+  .logo{
+    width: 6%;
+    padding: 0 0 0 2%;
+  }
+  #sear{
+    margin: 7% 0 0 20%;
+  }
