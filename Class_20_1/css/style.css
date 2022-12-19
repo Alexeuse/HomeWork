@@ -1,0 +1,17 @@
+.block{
+    display: block;
+    width: 100%;
+    margin: 2% auto 2% auto;
+}
+.soc_bol{
+    width: 200px; 
+    transition-duration: 5s;   
+}
+#check{
+    display: none;
+}
+#check:checked~.soc_bol{
+transform: translate(300%,0);
+cubic-bezier:(1,0,.37,.53);
+
+}
