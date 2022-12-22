@@ -1,7 +1,8 @@
 .block{
     display: block;
-    width: 100%;
+    width: 900px;
     margin: 2% auto 2% auto;
+    
 }
 .soc_bol{
     width: 200px; 
@@ -11,7 +12,25 @@
     display: none;
 }
 #check:checked~.soc_bol{
-transform: translate(300%,0);
+    transform: translate(900px,0) rotate(515.9deg);
+
 cubic-bezier:(1,0,.37,.53);
 
+}
+.balljamp {
+	width: 200px;
+    position: absolute;
+	bottom: 0;
+   
+}
+img {
+    width: 200px;
+}
+@keyframes bounce {
+	0%	{ bottom: 0; }
+	50%	{ bottom: 300px; }
+	100%	{ bottom: 0; }
+}
+.balljamp:hover {
+	animation: bounce 3s infinite ease;
 }
