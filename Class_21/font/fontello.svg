@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="fast-food" unicode="&#xe815;" d="M350 675c-150 0-300-75-300-200l0-100 850 0 0 100c0 125-150 200-300 200z m25-50c14 0 25-11 25-25 0-14-11-25-25-25-14 0-25 11-25 25 0 14 11 25 25 25z m200 0c14 0 25-11 25-25 0-14-11-25-25-25-14 0-25 11-25 25 0 14 11 25 25 25z m-300-100c14 0 25-11 25-25 0-14-11-25-25-25-14 0-25 11-25 25 0 14 11 25 25 25z m200 0c14 0 25-11 25-25 0-14-11-25-25-25-14 0-25 11-25 25 0 14 11 25 25 25z m200 0c14 0 25-11 25-25 0-14-11-25-25-25-14 0-25 11-25 25 0 14 11 25 25 25z m-625-200c-25 0-50-25-50-50 0-25 25-50 50-50l850 0c25 0 50 25 50 50 0 25-25 50-50 50z m0-150l0-50c0-50 50-100 100-100l650 0c50 0 100 50 100 100l0 50z" horiz-adv-x="950" />
+</font>
+</defs>
+</svg>

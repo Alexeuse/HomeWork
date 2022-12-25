@@ -1,0 +1,64 @@
+.cont{
+border: 1px solid black;
+width: 1920px;
+margin: auto;
+}
+#burg, [for=burg]{
+    display: none;
+    position: relative;
+    width: 25px;
+    top:10px;
+    text-align: right;
+}
+nav {
+  display: block;
+  width: 100%;
+  margin: 0 auto 10%;
+}
+
+a {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  border-right: 1px solid #ADC0CE;
+  background: rgba(199, 115, 248, 0.3);
+  color: #000000;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background: #1a6c8a;
+  overflow: hidden;
+  padding: 0;
+}
+li {
+  float: right;
+}
+@media screen and (max-width:320px){
+    .cont{
+        border: 1px solid black;
+        width: 320px;
+        margin: auto;
+ }
+ [for=burg]{
+    display: block;
+ }
+ nav{
+    display: none;
+    
+  }
+}
+ #burg:checked + label + nav{
+    display: block;
+ }
+
+@font-face{
+    font-family: fontello;
+    src: url('../font/fontello.ttf');
+}
+
+label{
+    font-family: fontello;
+}
