@@ -1,0 +1,18 @@
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    
+}   
+    
+
+#tires{
+    margin-bottom: -4px;
+}
+#bc{
+      margin-bottom: -4px;
+}
+
+
+
+
