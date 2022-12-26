@@ -7,9 +7,6 @@ body {
     border: 1px solid black;
     position: relative;
     z-index: 5;
-
-
-
 }
 
 .header {
@@ -25,7 +22,6 @@ body {
     height: 50px;
     background-color: aqua;
     border: 1px black solid;
-
 }
 
 .menu {
@@ -49,15 +45,13 @@ body {
     margin: 50px;
     display: flex;
     width: 50%;
-    
 }
 
 .pic {
     display: flex;
-    
-    
 }
-.text{
+
+.text {
     display: flex;
 }
 
@@ -70,10 +64,9 @@ body {
     right: -20px;
     top: 40%;
     z-index: 3;
-
 }
 
-.green {
+.red70 {
     height: 340px;
     width: 340px;
     border-radius: 50%;
@@ -85,7 +78,7 @@ body {
     opacity: 0.6;
 }
 
-.blue {
+.red50 {
     height: 380px;
     width: 380px;
     border-radius: 50%;
