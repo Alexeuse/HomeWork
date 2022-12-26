@@ -53,9 +53,12 @@ body {
 }
 
 .pic {
+    display: flex;
     
     
-    
+}
+.text{
+    display: flex;
 }
 
 .red {
@@ -76,7 +79,8 @@ body {
     border-radius: 50%;
     background-color: rgb(241, 117, 117);
     position: absolute;
-    right: -20px;
+    right: -40px;
+    top: 34%;
     z-index: 2;
     opacity: 0.6;
 }
@@ -87,7 +91,8 @@ body {
     border-radius: 50%;
     background-color: rgb(241, 117, 117);
     position: absolute;
-    right: -20px;
+    right: -60px;
+    top: 29%;
     opacity: 0.3;
     z-index: 1;
 }
