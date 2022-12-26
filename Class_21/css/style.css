@@ -1,15 +1,18 @@
-.cont{
-border: 1px solid black;
-width: 1920px;
-margin: auto;
+.cont {
+  
+  width: 100%;
+  margin: auto;
 }
-#burg, [for=burg]{
-    display: none;
-    position: relative;
-    width: 25px;
-    top:10px;
-    text-align: right;
+
+#burg,
+[for=burg] {
+  display: none;
+  position: relative;
+  width: 25px;
+  top: 10px;
+  text-align: right;
 }
+
 nav {
   display: block;
   width: 100%;
@@ -17,14 +20,14 @@ nav {
 }
 
 a {
-  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 1px;
   border-right: 1px solid #ADC0CE;
   background: rgba(199, 115, 248, 0.3);
   color: #000000;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -33,32 +36,65 @@ ul {
   overflow: hidden;
   padding: 0;
 }
+
+a:hover {
+  background: #ADC0CE
+}
+
 li {
-  float: right;
+  float: left;
 }
-@media screen and (max-width:320px){
-    .cont{
-        border: 1px solid black;
-        width: 320px;
-        margin: auto;
- }
- [for=burg]{
-    display: block;
- }
- nav{
-    display: none;
+
+@media screen and (max-width:320px) {
+  .cont {
     
+    width: 90%;
+    margin: auto;
   }
-}
- #burg:checked + label + nav{
+
+  [for=burg] {
     display: block;
- }
+  }
 
-@font-face{
-    font-family: fontello;
-    src: url('../font/fontello.ttf');
+  nav {
+    display: none;
+    margin-top: 10px;
+
+  }
+
+
+  #burg:checked+label+nav {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 80%;
+    display: block;
+    padding: 1em;
+    border-right: 1px solid #ADC0CE;
+    background: rgba(199, 115, 248, 0.3);
+    color: #000000;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    background: #1a6c8a;
+    overflow: hidden;
+    padding: 0;
+  }
+
+
+  li {
+    float: none;
+  }
+
+
+
 }
 
-label{
-    font-family: fontello;
+label {
+  font-family: fontello;
+  font-size: 150%;
 }
