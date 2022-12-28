@@ -1,0 +1,10 @@
+.cont{
+    width: 1440px;
+    height: 96px;
+    border: 1px solid black;
+}
+.main{
+    width: 1440px;
+    height: 1190px;
+    border: 1px solid blue;
+}
