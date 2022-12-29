@@ -20,20 +20,18 @@ body {
     align-items: center;
 }
 
-.main {
-    width: 1440px;
-    height: 1190px;
-    border: 1px solid blue;
-}
+
+
+
+
 
 .logo {
     display: flex;
-    
 }
 
 .menu {
     display: flex;
-    width: 500px;
+    width: 600px;
     height: 50px;
     justify-content: center;
 }
@@ -57,9 +55,23 @@ p {
 
 li {
     list-style: none;
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 0;
 
 }
+
+li::after {
+    content: "·";
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #FDCB6E;
+    margin: 0 0 0 24px;
+}
+
+
 
 li a {
     text-decoration: none;
@@ -79,8 +91,11 @@ li a {
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.2px;
-
     color: #2D3436;
+}
+
+.non::after {
+    content: " ";
 }
 
 .input {

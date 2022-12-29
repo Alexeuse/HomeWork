@@ -1,0 +1,91 @@
+.main {
+    width: 1440px;
+    height: 1190px;
+    border: 1px solid blue;
+}
+
+.header {
+    display: block;
+    text-align: center;
+    width: 1440px;
+    margin-bottom: 50px;
+
+}
+
+.grhead {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    letter-spacing: -3px;
+    color: #2D3436;
+    text-shadow: 0px 4px 0px #FFFFFF;
+
+
+}
+
+.head {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    letter-spacing: -1px;
+    color: #2D3436;
+    margin: -50px 0 0 0;
+}
+
+.pink {
+    color: #E84393;
+}
+
+.pluh {
+    display: flex;
+}
+
+.pluh_ver {
+    display: flex;
+    flex-direction: column;
+    margin-left: 135px;
+}
+
+.text1 {
+    width: 270px;
+    height: 102;
+   
+
+
+}
+
+.use {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #2D3436;
+    margin-top: -10px;
+
+
+}
+
+.oran {
+    display: block;
+    width: 270px;
+    min-height: 464px;
+    background: #FDCB6E;
+    border-radius: 20px;
+}
+
+.aim{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #2D3436;
+}
+.usd{
+    font-weight: 100;
+}
