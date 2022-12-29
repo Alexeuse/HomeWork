@@ -7,7 +7,6 @@ body {
     width: 1440px;
     border-radius: 6px;
     background-color: white;
-    display: block;
     border-radius: 24px;
 }
 
@@ -42,7 +41,7 @@ ul {
     justify-content: center;
 }
 
-p {
+p.gri {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
