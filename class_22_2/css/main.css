@@ -4,7 +4,7 @@
     width: 1170px;
     height: 1190px;
     border: 1px solid blue;
-    
+
 }
 
 .header {
@@ -44,15 +44,15 @@
 .pluh {
     display: flex;
     width: 1170px;
-    
-    
+
+
 }
 
 .pluh_ver {
     flex-direction: column;
     justify-content: space-between;
     margin-right: 30px;
-    
+
 
 }
 
@@ -125,7 +125,7 @@
     width: 100%;
     height: 400px;
     flex-wrap: wrap;
-    
+
 }
 
 .gree {
@@ -155,16 +155,32 @@
     background: url(../pic/Image.png);
     border-radius: 20px;
 }
+
 .pluh3 {
     display: flex;
     margin: 1px;
     width: 100%;
-    
+
 }
 
-.pink_f{
-width: 270px;
-height: 284px;
-background: #E84393;
-border-radius: 20px;
+.pink_f {
+    width: 270px;
+    height: 284px;
+    background: #E84393;
+    border-radius: 20px;
+}
+
+.dark_bl {
+    width: 370px;
+    height: 356px;
+    background: #6C5CE7;
+    border-radius: 20px;
+}
+
+.mork {
+    width: 170px;
+    height: 222px;
+    background: #FF7675;
+    border-radius: 20px;
+    align-self: ;
 }
