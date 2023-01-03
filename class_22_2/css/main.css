@@ -3,7 +3,7 @@
     margin: 0 auto 0 auto;
     width: 1170px;
     height: 1190px;
-    border: 1px solid blue;
+    
 
 }
 
@@ -134,6 +134,32 @@
     height: 380px;
     background: #00B894;
     border-radius: 20px;
+    z-index: 3;
+}
+
+p.whitcent {
+    text-align: center;
+    margin: 35% 0 auto 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+
+
+}
+
+p.whitcent2 {
+    text-align: center;
+    margin: 40% 0 auto 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+
 
 }
 
@@ -146,6 +172,7 @@
     height: 222px;
     background: #A29BFE;
     border-radius: 20px;
+    z-index: 3;
 }
 
 .ked {
@@ -154,6 +181,7 @@
     max-height: 222px;
     background: url(../pic/Image.png);
     border-radius: 20px;
+    z-index: 3;
 }
 
 .pluh3 {
@@ -168,6 +196,8 @@
     height: 284px;
     background: #E84393;
     border-radius: 20px;
+    align-self: flex-start;
+    margin-top: 25px;
 }
 
 .dark_bl {
@@ -175,6 +205,7 @@
     height: 356px;
     background: #6C5CE7;
     border-radius: 20px;
+    margin-top: 25px;
 }
 
 .mork {
@@ -182,5 +213,28 @@
     height: 222px;
     background: #FF7675;
     border-radius: 20px;
-    align-self: ;
+    align-self: flex-start;
+    margin-top: 25px;
+}
+
+.korob {
+    position: absolute;
+    left: -72px;
+    right: 0px;
+    top: 1px;
+    bottom: 530px;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.plast {
+    position: absolute;
+    width: 1376.03px;
+    height: 767.91px;
+    left: 670px;
+    bottom: -262.91px;
+    background: #FFEAA7;
+    border-radius: 99px;
+    transform: rotate(-45deg);
+   
 }
