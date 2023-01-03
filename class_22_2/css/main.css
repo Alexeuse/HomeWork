@@ -219,7 +219,7 @@ p.whitcent2 {
 
 .korob {
     position: absolute;
-    left: -72px;
+    left: -200px;
     right: 0px;
     top: 1px;
     bottom: 530px;
@@ -231,8 +231,6 @@ p.whitcent2 {
     position: absolute;
     width: 1376.03px;
     height: 767.91px;
-    left: 670px;
-    bottom: -262.91px;
     background: #FFEAA7;
     border-radius: 99px;
     transform: rotate(-45deg);
