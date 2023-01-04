@@ -1,0 +1,12 @@
+.a3 {
+    width: 297mm;
+    height: 440mm;
+
+}
+
+.main {
+    width: 296mm;
+    display: grid;
+    grid-template-columns: 26mm 45mm 45mm 30mm 50mm 25mm 25mm 50mm;
+    grid-template-rows: 32mm 9mm 34mm 6mm 6mm 353mm;
+}
