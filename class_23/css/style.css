@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
 .a3 {
     width: 297mm;
     height: 440mm;
@@ -7,6 +15,52 @@
 .main {
     width: 296mm;
     display: grid;
-    grid-template-columns: 26mm 45mm 45mm 30mm 50mm 25mm 25mm 50mm;
-    grid-template-rows: 32mm 9mm 34mm 6mm 6mm 353mm;
+    grid-template-columns: 148mm 50mm 24mm 24mm 50mm;
+    grid-template-rows: 32mm 9mm 46mm 234mm 119mm;
+    grid-template-areas: "header header header header header"
+        "prolet empty empty empty empty"
+        "logo stalin stalin stalin stalin"
+        "akt prikaz prikaz prikaz prikaz"
+        "akt denpo denpo denpo denpo"
+    ;
+}
+
+
+.header {
+    grid-area: header;
+    text-align: center;
+    align-self: flex-end;
+}
+
+p.grhead {
+    font-size: 38pt;
+    font-weight: bold;
+    letter-spacing: 0.1cm;
+
+}
+
+.prolet {
+    grid-area: prolet;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.stalin {
+    grid-area: stalin;
+}
+
+.akt {
+    grid-area: akt;
+}
+
+.prikaz {
+    grid-area: prikaz;
+}
+
+.denpo {
+    grid-area: denpo;
 }
