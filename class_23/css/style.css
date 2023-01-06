@@ -49,9 +49,35 @@ p.grhead {
     grid-area: logo;
 }
 
+.com {
+    width: 148mm;
+    display: grid;
+    grid-template-columns: 29mm 90mm 29mm;
+    grid-template-rows: 34mm 6mm 6mm;
+    grid-template-areas: "one one one"
+        "two two two"
+        ;
+}
+
 .stalin {
     grid-area: stalin;
 }
+
+.one {
+    grid-column: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+/* .three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+} */
 
 .akt {
     grid-area: akt;
