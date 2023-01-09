@@ -1,8 +1,8 @@
 * {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid black; */
 }
 
 
@@ -32,12 +32,6 @@
     align-self: flex-end;
 }
 
-p.grhead {
-    font-size: 38pt;
-    font-weight: bold;
-    letter-spacing: 0.1cm;
-
-}
 
 .prolet {
     grid-area: prolet;
@@ -50,35 +44,69 @@ p.grhead {
 }
 
 .com {
-    width: 148mm;
     display: grid;
     grid-template-columns: 29mm 90mm 29mm;
     grid-template-rows: 34mm 6mm 6mm;
     grid-template-areas: "one one one"
         "two two two"
+        "three four five"
         ;
 }
 
 .stalin {
     grid-area: stalin;
+    border-bottom: 5px solid black;
+}
+
+.verh{
+    display: grid;
+    grid-template-columns: 74mm 74mm;
+    grid-template-areas: "juk tend";
+}
+.juk{
+    grid-area: juk;
+}
+.tend{
+    grid-area: tend;
 }
 
 .one {
+    display: grid;
     grid-column: one;
+    grid-template-columns: 25mm 138mm;
+    grid-template-areas: "/1/2";
+    justify-items: stretch;
+    align-items: flex-start;
 }
 
 .two {
     grid-area: two;
+    /* justify-content: space-between; */
+
 }
 
-/* .three {
+.three {
     grid-area: three;
-}
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 5px solid black;
+    
+    
+    }
 
 .four {
     grid-area: four;
-} */
-
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 5px solid black;
+}
+.five {
+    grid-area: five;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 5px solid black;
+}
 .akt {
     grid-area: akt;
 }
@@ -89,4 +117,8 @@ p.grhead {
 
 .denpo {
     grid-area: denpo;
+}
+.pic{
+    width: 100%;
+    /* float: right; */
 }

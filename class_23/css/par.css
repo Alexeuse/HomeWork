@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'RealTruth';
+    src: url('../fonts/RealTruth.ttf') format('truetype');
+}
+
+p.grhead {
+    font-size: 38pt;
+    font-weight: bold;
+    letter-spacing: 0.1cm;
+    word-spacing: 21pt;
+    margin: 0pt;
+
+
+}
+p.tabl{
+    font-size: 8pt;
+    text-align: center;
+    margin-top: 3pt;
+    font-weight: bold;
+    
+}
+p.twoO{
+    margin: 0pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    word-spacing: 7pt;
+}
+p.prol{
+    position: relative;
+    font-style: italic;
+    /* text-decoration-line: underline; */
+
+}
+p.prol::before {
+    content: "";
+    position: absolute;
+    /* left: 7%; */
+    top: 20px;
+    width: 255pt;
+    height: 2px;
+    /* transform: skew(-12deg) translateX(-50%); */
+    background:black;
+    z-index: -1;
+  }
+
+p.logoKom {
+    font-family: 'RealTruth';
+    font-size: 38pt;
+    text-align: justify;
+    font-stretch: ultra-condensed;
+    letter-spacing: 7pt;
+    font-weight: bold;
+    margin: 0pt 0pt 0pt 0pt;
+    padding: 0pt 0pt 0pt 0pt;
+}
+
+p.logoKomPr {
+    font-family: 'RealTruth';
+    font-size: 58pt;
+    text-align: justify;
+    font-stretch: ultra-condensed;
+    letter-spacing: 32pt;
+    font-weight: bold;
+    margin: -5pt 0pt 0pt 0pt;
+    padding: 0pt 0pt 0pt 0pt;
+}
+
+.sta {
+    text-align: right;
+    font-size: 32pt;
+    margin: -5pt 0pt 0pt 0pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.staP {
+    font-style: italic;
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    padding: 0pt;
+    margin: 2pt 0pt 0pt 0pt;
+}
+p.aktGrhead{
+font-size: 18pt;
+text-align: center;
+font-weight: bold;
+margin: 0pt;
+}
+p.aktHead{
+    font-size: 18pt;
+    text-align: center;
+    margin: 5pt 0pt 0pt 0pt;
+    font-style: italic;
+    font-weight: bold;
+}
+p.aktList{
+    text-indent: 15pt;
+    text-align: justify;
+    padding-right: 10pt;
+    margin: 0pt;
+    font-size: 12pt;
+}
+p.aktName{
+    margin: 0pt;
+    padding: 5pt 20pt 0 15pt;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    word-spacing: 13.9pt;
+}
+p.aktPris{
+    margin: 0pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
