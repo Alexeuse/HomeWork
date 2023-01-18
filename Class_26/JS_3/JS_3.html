@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let x = prompt('Enter X');
+    let y = prompt('Enter Y');
+    let z = prompt('Enter Z');
+    if (x > y && x > z && y > z) {
+        console.log (z);
+        console.log (y);
+        console.log (x);
+        
+    }
+    else if (x > z && x > y && z > y) {
+        console.log (y);
+        console.log (z);
+        console.log (x);
+        
+    }
+    else if (y > x && y > z && x > z) {
+        console.log (z);
+        console.log (x);
+        console.log (y);
+        
+    }
+    else if (y > z && y > x && z > x) {
+        console.log (x);
+        console.log (z);
+        console.log (y);
+        
+    }
+    else if (z > x && z > y && x > y) {
+        console.log (y);
+        console.log (x);
+        console.log (z);
+        
+    }
+    else if (z > y && z > x && y > x)  {
+        console.log (x);
+        console.log (y);
+        console.log (z);
+    }
+   </script> 
+</body>
+</html>
