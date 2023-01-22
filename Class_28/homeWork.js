@@ -66,6 +66,39 @@
 //loop-5
 //Выведите в консоль сумму всех нечётных чисел от 1 до 50. Дополнительно: решите эту задачу, используя оператор continue.
 
+// let i = 1;
+// let sum = 0;
+// for (; i <= 50; i++) {
+//     if (!(i % 2))
+//         continue;
+//     sum += i;
+// }
+// console.log(sum);
+
+//loop-6
+//Используя циклы, выведите в консоль первые 15 [чисел Фибоначчи](https://ru.wikipedia.org/wiki/Числа_Фибоначчи).
+// let i = 0;
+// let x = 1;
+// let sum = i + x;
+// sum > 377 ? console.log('End') : console.log(i = sum + x);
+// let i = 0;
+// let x = 1;
+// console.log(i);
+// console.log(x);
+// for (i < 377 && x < 377; i += x; x += i) {
+//     if (i == 377 && x == 377)
+//         break;
+
+// }
+// let x = 0;
+// let y = 1;
+// if (x != 377$$y != 377) {
+    
+// }
+
+
+
+
 
 
 
