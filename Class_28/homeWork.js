@@ -77,27 +77,72 @@
 
 //loop-6
 //Используя циклы, выведите в консоль первые 15 [чисел Фибоначчи](https://ru.wikipedia.org/wiki/Числа_Фибоначчи).
-// let i = 0;
+//WHILE
 // let x = 1;
-// let sum = i + x;
-// sum > 377 ? console.log('End') : console.log(i = sum + x);
-// let i = 0;
-// let x = 1;
-// console.log(i);
+// let y = 0;
 // console.log(x);
-// for (i < 377 && x < 377; i += x; x += i) {
-//     if (i == 377 && x == 377)
-//         break;
-
+// console.log(y);
+// while (x < 144) {
+// x += y;
+// console.log(x);
+// y += x;
+// console.log(y);
 // }
-// let x = 0;
-// let y = 1;
-// if (x != 377$$y != 377) {
-    
+//WHILE
+
+// let x = 1;
+// let y = 0;
+// console.log(y);
+// for (; x < 377; x += y) {
+// if (y < 377) y += x;
+// console.log(x);
+// console.log(y);
 // }
 
 
+//loop-7
+// Используя циклы (и операцию конкатенации), выведите в консоль "шахматную доску":
+let x = ' #';
+let y = '# ';
+while (x == ' #') {
+    x += x;
+    while (x < ' # # # #') {
+        x += x;
+        while (x == ' # # # #') {
+            x = x + '\n';
+        }
+    }
+}
+while (y == '# ') {
+    y += y;
+    while (y < '# # # # ') {
+        y += y;
+        while (y == '# # # # ') {
+            y = y + '\n';
+        }
+    }
+}
 
+console.log(x + y + x + y + x + y + x + y);
+
+
+
+
+
+
+// for (let z = ' '; z == ' '; z += '#') {
+// if (z == ' ')
+// continue;
+// console.log(z);
+// }
+
+//
+// for (let z = x + y; z < ' # # # #'; z += z) {
+    // if (z == ' # # # #')
+        // break;
+    // console.log(z);
+// }
+// 
 
 
 
