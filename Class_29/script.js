@@ -22,23 +22,34 @@
 
 
 //Напишите функцию, которая подсчитывает сумму цифр числа
-
-
-
-// let a = 22;
-// let c = 0;
-// let summa = function () {
-    // for (; a > 0; a = a - c) {
-        // c = a % 10;
-    // }
+let a = +prompt("До четырех знаков")
+let summa = function (a, c, b) {
+    while (a > 999) {
+      c = a % 10;
+          a = a - c;
+          a = a / 10;
+          b = b + c;}
+                
+        while (a > 99) {
+          c = a % 10;
+          a = a - c;
+          a = a / 10;
+          b = b + c;
+          }
+          
+          while (a > 9) {
+            c = a % 10;
+            a = a - c;
+            a = a / 10;
+            b = b + c;
+        }
+           b = a + b; 
+      console.log(b);
+  }
+  summa(a, 0, 0);
 // 
 // 
-    // console.log(c);
-// }
-// summa();
-
-
-
+// 
 // let x = prompt('Enter number');
 // let a = x[0] * 1;
 // let b = x[1] * 1;
