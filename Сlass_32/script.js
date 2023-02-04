@@ -15,30 +15,31 @@
 
 
 //2. Создайте функцию repeat(str, n), которая возвращает строку, состоящую из n повторений строки str. По умолчанию n=2, str — пустая строка.
-// function repeat(str = ' ', n = 2){
-// 
-// }
-// 
-// repeat(str, n);
+let str = prompt
+function repeat(str = '', n = 2){
+if (n)
+}
+
+repeat(str, n);
 
 // 3. Создайте функцию, которая принимает два аргумента – количество учеников в классе и количество парт в кабинете. Функция возвращает строку вида «не хватает 2 парт» / «1 лишняя парта».
 
-function count(desk, pupil) {
-  // let pair = pupil / 2;
+// function count(desk, pupil) {
+//   // let pair = pupil / 2;
 
-  if ((desk - pupil / 2) >= 0) {
-    let extra = desk - pupil / 2;
+//   if ((desk - pupil / 2) >= 0) {
+//     let extra = desk - pupil / 2;
 
-    console.log(extra);
-    console.log("свободно");
-  }
-  else {
-    let non = pupil / 2 - desk;
-    console.log(non);
-    console.log("не хватает");
-  }
-}
-count(5, 20)
+//     console.log(extra);
+//     console.log("свободно");
+//   }
+//   else {
+//     let non = pupil / 2 - desk;
+//     console.log(non);
+//     console.log("не хватает");
+//   }
+// }
+// count(5, 20)
 
 
 
