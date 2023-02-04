@@ -47,17 +47,7 @@ let summa = function (a, c, b) {
       console.log(b);
   }
   summa(a, 0, 0);
-// 
-// 
-// 
-// let x = prompt('Enter number');
-// let a = x[0] * 1;
-// let b = x[1] * 1;
-// let summ = a + b;
-// console.log(summ);
-
-
-
+ 
 
 
 

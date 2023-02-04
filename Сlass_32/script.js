@@ -15,12 +15,15 @@
 
 
 //2. Создайте функцию repeat(str, n), которая возвращает строку, состоящую из n повторений строки str. По умолчанию n=2, str — пустая строка.
-let str = prompt
-function repeat(str = '', n = 2){
-if (n)
-}
-
-repeat(str, n);
+// let str = prompt('Enter text');
+// let n = prompt('Enter number');
+// function repeat(str = '', n = 2) {
+//   let new_str = '';
+//   while (n-- > 0) 
+//     new_str += str;
+//     console.log(new_str); 
+//   }
+// repeat(str, n);
 
 // 3. Создайте функцию, которая принимает два аргумента – количество учеников в классе и количество парт в кабинете. Функция возвращает строку вида «не хватает 2 парт» / «1 лишняя парта».
 
@@ -43,79 +46,99 @@ repeat(str, n);
 
 
 
-// function min(a, b, c) {
-// if (a < b && b < c) {
-// console.log(a);
-// return a;
-// } else if (b < a && a < c) {
-// console.log(b);
-// return b;
+// 4. Создайте функцию, которая получает в качестве аргумента оценку по 10-балльной шкале. Для ошибочных аргументов (0, «B») функция возвращает текстовую ошибку, для верных – их текстовое описание:
+
+// let grade = +prompt("enter grade");
+
+// switch (grade) {
+//   case 10:
+//     console.log('Brilliant');
+//     break;
+//   case 9:
+//     console.log('Excellent');
+//     break;
+//   case 8:
+//     console.log('Almost excellent	');
+//     break;
+//   case 7:
+//     console.log('Very good');
+//     break;
+//   case 6:
+//     console.log('Good');
+//     break;
+//   case 5:
+//     console.log('Almost good');
+//     break;
+//   case 3:
+//   case 4:
+//     console.log('Satisfactory');
+//     break;
+//   case 2:
+//   case 1:
+//     console.log('Unsatisfactory');
+//     break;
+//   default:
+//     console.log('error');
 // }
-// else {
-// console.log(c);
-// return c;
+
+
+// 5. Используя цикл do..while, создайте функцию, которая принимает числа через prompt(), пока не будет введено число 0.
+// function zero(a) {
+//   do { 
+//     var a = +prompt('0');
+//   }
+//   while (a != 0);
+//   console.log(a);
 // }
+// zero();
+
+// 6. Перепишите функцию из задачи 5 так, чтобы она принимала числа, пока их сумма остаётся меньше 100, выводила эту сумму в консоль, а возвращала количество введённых чисел.
+// var b = 0;
+// var c = 0;
+// function zero(a) {
+//   do {
+//     var a = +prompt(c);
+//     b += a;
+//     console.log(b);
+//     c++;
+//   }
+//   while (b < 100);
+//   console.log("enumeration");
 // }
-// min(3, 2, 1);
+// zero();
 
-
-
-//2. Создайте функцию, которая получает в качестве аргументов значения суток, часов и минут, а возвращает соответствующее им количество секунд.
-
-// function sut(a, b, c) {
-// a = a * 24 * 60 * 60;
-// b = b * 60 * 60;
-// c = c * 60;
-// let itog = a + b + c;
-// console.log(itog);
-// return itog;
-
-// sut(0, 0, 1);
-
-//3. Напишите рекурсивную функцию для подсчёта факториала числа.
-// function fact(i) {
-// if (i == 1) {
-// return 1;
-// }
-// else {
-// return i * fact(i - 1);
-// }
-// }
-// fact(7);
-
-
-//4.
+// 7. Создайте функцию, которая принимает число в качестве аргумента и проверяет, является ли это число простым.
+var a = +prompt('enter');
+function sky(a) {
+  b = a;
+ while (a % (b - 1) != 0) {
+  b--;
+  console.log(b);
+ }
+}
 
 
 
 
-//5. Напишите функцию для решения квадратных уравнений. В качестве параметров она должна принимать коэффиценты a, b и c, возвращать – количество корней. Сами корни уравнения (или информацию о их отсутствии) функция должна выводить в консоль.
-// Примечание 1. Ищем только решения в действительных числах, комплексные не нужны!
-// Примечание 2. Для получения квадратного корня используйте стандартную функцию JS: [Math.sqrt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt).
+    //   if (a <= 2) {
+    //     console.log("no");}
+    //     else if (a % 2 == 0) {
+    //       console.log("no");}
+    //       else if (a % 3 == 0) {
+    //         console.log("no");}
+    //         else if (a % 4 == 0) {
+    //           console.log("no");}
+    //           else if (a % 5 == 0) {
+    //             console.log("no");}
+    //             else if (a % 6 == 0) {
+    //               console.log("no");}
+    //               else if (a % 7 == 0) {
+    //                 console.log("no");}
+    //                 else if (a % 8 == 0) {
+    //                   console.log("no");}
+    //                   else if (a % 9 == 0) {
+    //                     console.log("no");}
+    //   else console.log("yes");
+    // }
 
-
-// function koren(a, b, c) {
-  // let disk = b ** 2 - 4 * a * c;
-  // console.log(disk);
-  // if (disk > 0) {
-    // let x1 = ((-b + Math.sqrt(disk)) / (2 * a));
-    // let x2 = ((-b - Math.sqrt(disk)) / (2 * a));
-    // console.log(x1, x2);
-  // }
-  // else if (disk == 0) {
-    // let x = -b / (2 * a);
-    // console.log(x);
-  // }
-  // else {
-    // console.log("Корней нет");
-  // }
-// }
-//
-//
-// koren(-7, -7, 8);
-// 
-
-
-
-
-
+    sky(a);
