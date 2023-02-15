@@ -124,34 +124,55 @@
 // prime(num);
 // 
 // 
-var num = +prompt('enter');
+// var num = +prompt('enter');
 
 
-function prime(num) {
-  for (let i = 2; i <= num; i++) {
+// function prime(num) {
+//   for (let i = 2; i <= num; i++) {
 
-    if (num % i !== 0) {
-      continue;
+//     if (num % i !== 0) {
+//       continue;
 
-    }
-    else if (num / i == 1) {
-      console.log("prime");
-      break;
-    }
+//     }
+//     else if (num / i == 1) {
+//       console.log("prime");
+//       break;
+//     }
 
-    else if (num % i === 0) {
-      console.log("NO prime");
-      break;
-    }
+//     else if (num % i === 0) {
+//       console.log("NO prime");
+//       break;
+//     }
 
-  }
+//   }
+// }
+// prime(num);
+
+
+// 8. Создайте функцию, которая принимает в качестве аргумента целое число, соответствующее порядковому номеру месяца. Если месяц с таким номером существует, функция возвращает имя сезона (лето, осень, зима, весна), к которому относится месяц. Если нет –сообщение об ошибке.
+
+
+var month = +prompt('enter month');
+function prime(month) {
+  if (0 >= month || month >= 13) {
+    console.log("error 1-12");
+ }
+else if ((month ^ 0) !== month){
+  console.log("error 0,0");
 }
-prime(num);
 
-
-
-
-
+else if (month > 2 && month < 6){
+  console.log("Sring -- Berds");
+}
+else if (month > 5 && month < 9){
+  console.log("Summer -- 38");
+}
+else if (month > 8 && month < 12){
+  console.log("Autum -- leaf");
+}
+else (console.log("Winter -- Matheres"));
+}
+prime(month);
 
 
 
