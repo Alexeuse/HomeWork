@@ -152,33 +152,55 @@
 // 8. Создайте функцию, которая принимает в качестве аргумента целое число, соответствующее порядковому номеру месяца. Если месяц с таким номером существует, функция возвращает имя сезона (лето, осень, зима, весна), к которому относится месяц. Если нет –сообщение об ошибке.
 
 
-var month = +prompt('enter month');
-function prime(month) {
-  if (0 >= month || month >= 13) {
-    console.log("error 1-12");
- }
-else if ((month ^ 0) !== month){
-  console.log("error 0,0");
+// var month = +prompt('enter month');
+// function prime(month) {
+//   if (0 >= month || month >= 13) {
+//     console.log("error 1-12");
+//  }
+// else if ((month ^ 0) !== month){
+//   console.log("error 0,0");
+// }
+
+// else if (month > 2 && month < 6){
+//   console.log("Sring -- Berds");
+// }
+// else if (month > 5 && month < 9){
+//   console.log("Summer -- 38");
+// }
+// else if (month > 8 && month < 12){
+//   console.log("Autum -- leaf");
+// }
+// else (console.log("Winter -- Matheres"));
+// }
+// prime(month);
+
+// 9. Создайте функцию, которая выводит в консоль числа от 10 до 99, заканчивающиеся на 7 или делящиеся на 7 (в убывающем порядке).
+
+var nambeer = +prompt('enter number');
+function prime(nambeer) {
+  if (nambeer < 9 || nambeer > 100) {
+    console.log("error 10-99");
+  }
+  for (let i = 10; nambeer > i; nambeer--) {
+    if (nambeer % 10 != 7 && nambeer % 7 != 0) {
+      continue;
+    }
+    console.log(nambeer);
+  }
 }
+prime(nambeer);
 
-else if (month > 2 && month < 6){
-  console.log("Sring -- Berds");
-}
-else if (month > 5 && month < 9){
-  console.log("Summer -- 38");
-}
-else if (month > 8 && month < 12){
-  console.log("Autum -- leaf");
-}
-else (console.log("Winter -- Matheres"));
-}
-prime(month);
-
-
-
-
-
-
+// else if (month > 2 && month < 6){
+//   console.log("Sring -- Berds");
+// }
+// else if (month > 5 && month < 9){
+//   console.log("Summer -- 38");
+// }
+// else if (month > 8 && month < 12){
+//   console.log("Autum -- leaf");
+// }
+// else (console.log("Winter -- Matheres"));
+// }
 
 
 
