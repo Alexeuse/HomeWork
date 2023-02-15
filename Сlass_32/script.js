@@ -108,24 +108,6 @@
 // zero();
 
 // 7. Создайте функцию, которая принимает число в качестве аргумента и проверяет, является ли это число простым.
-// var num = +prompt('enter');
-// let i = 2;
-// function prime(num) {
-// while (i < num) {
-// if (num % i === 0) {
-// console.log("NO prime");
-// break;
-// }
-// else (num % i !== 0) {
-// i++;
-// }
-// }
-// }
-// prime(num);
-// 
-// 
-// var num = +prompt('enter');
-
 
 // function prime(num) {
 //   for (let i = 2; i <= num; i++) {
@@ -173,22 +155,47 @@
 // else (console.log("Winter -- Matheres"));
 // }
 // prime(month);
-
+// _______________________________________________-------------------------------------__________________________________________
 // 9. Создайте функцию, которая выводит в консоль числа от 10 до 99, заканчивающиеся на 7 или делящиеся на 7 (в убывающем порядке).
+// var nambeer = +prompt('enter number');
+// function prime(nambeer) {
+//   if (nambeer < 9 || nambeer > 100) {
+//     console.log("error 10-99");
+//   }
+//   for (let i = 10; nambeer > i; nambeer--) {
+//     if (nambeer % 10 != 7 && nambeer % 7 != 0) {
+//       continue;
+//     }
+//     console.log(nambeer);
+//   }
+// }
+// prime(nambeer);
 
-var nambeer = +prompt('enter number');
+
+// 10. Создайте функцию, которая для чисел от 2 до 20 выводит в консоль все их делители.
+
+
+var nambeer = 2;
+let b = 0;
 function prime(nambeer) {
-  if (nambeer < 9 || nambeer > 100) {
-    console.log("error 10-99");
-  }
-  for (let i = 10; nambeer > i; nambeer--) {
-    if (nambeer % 10 != 7 && nambeer % 7 != 0) {
-      continue;
+  for (let i = 2; i < 21; i++) {
+    b = nambeer / i;
+    if (b % 10 == 0) {
+      console.log(b)
     }
-    console.log(nambeer);
+    return function prime(nambeer + 1);
   }
 }
 prime(nambeer);
+
+
+
+
+
+
+
+
+
 
 // else if (month > 2 && month < 6){
 //   console.log("Sring -- Berds");
