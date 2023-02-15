@@ -108,14 +108,70 @@
 // zero();
 
 // 7. Создайте функцию, которая принимает число в качестве аргумента и проверяет, является ли это число простым.
-var a = +prompt('enter');
-function sky(a) {
-  b = a;
- while (a % (b - 1) != 0) {
-  b--;
-  console.log(b);
- }
+// var num = +prompt('enter');
+// let i = 2;
+// function prime(num) {
+// while (i < num) {
+// if (num % i === 0) {
+// console.log("NO prime");
+// break;
+// }
+// else (num % i !== 0) {
+// i++;
+// }
+// }
+// }
+// prime(num);
+// 
+// 
+var num = +prompt('enter');
+
+
+function prime(num) {
+  for (let i = 2; i <= num; i++) {
+
+    if (num % i !== 0) {
+      continue;
+
+    }
+    else if (num / i == 1) {
+      console.log("prime");
+      break;
+    }
+
+    else if (num % i === 0) {
+      console.log("NO prime");
+      break;
+    }
+
+  }
 }
+prime(num);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,4 +197,3 @@ function sky(a) {
     //   else console.log("yes");
     // }
 
-    sky(a);
