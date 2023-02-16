@@ -1,0 +1,333 @@
+body {
+    background-image: url(../linls/menu_back.jpg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+// Хамбургер
+.burger {
+    display: none;
+}
+
+@media (max-width:767px) {
+
+    .burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 4;
+
+        ::after,
+        ::before {
+            content: "";
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            left: 0;
+            top: 30px;
+
+        }
+
+        ::before {
+            transform: translateY(10px);
+        }
+
+        ::after {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 0 rgb(0, 0, 0);
+        }
+
+
+
+
+    }
+
+    // .burger span {
+    //         position: absolute;
+    //         background-color: rgb(0, 0, 0);
+    //         left: 0;
+    //         width: 100%;
+    //         height: 2px;
+    //         top: 10px;
+
+    //     }
+
+    .dws-menu {
+        position: fixed;
+        padding-top: 30px;
+        top: 0;
+        left: 0;
+        width: 30%;
+        height: 50%;
+        background-color: #33bdf1;
+        z-index: 3;
+
+        ul.dws-ul {
+            flex-direction: column;
+        }
+
+    }
+
+}
+
+
+// -----------------------
+
+
+// Блок Меню
+.dws-menu {
+    background-color: white;
+    margin: 10px auto 1px auto;
+    width: 100%;
+
+    ul.dws-ul {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+
+        li.dws-li {
+            list-style: none;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: #000;
+                position: relative;
+                padding: 5px;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+
+            a::before {
+                content: '';
+                width: 0;
+                height: 3px;
+                background-color: #33bdf1;
+                position: absolute;
+                top: 90%;
+                left: 0;
+                transition: .5s;
+                mix-blend-mode: multiply;
+            }
+
+            a::after {
+                content: '';
+                width: 0;
+                height: 3px;
+                background-color: #ff2117;
+                position: absolute;
+                top: 90%;
+                right: 0;
+                transition: .5s;
+                mix-blend-mode: multiply;
+            }
+        }
+
+        :hover {
+            background-color: #e5eae8;
+        }
+
+        li.dws-li:hover a::before {
+            width: 50%;
+            transform: translateX(100%);
+        }
+
+        li.dws-li:hover a::after {
+            width: 50%;
+            transform: translateX(-100%);
+        }
+
+        li.dws-li a:hover {
+            color: #e62117;
+        }
+    }
+}
+
+// Конец Блока Меню
+
+// Главная страница
+.mainIndex {
+    // background-color: rgb(97, 235, 154);
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    // align-content:space-around;
+    justify-content: center;
+
+
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(4, 1fr);
+    // grid-gap: 15px;
+
+
+    .cube {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        // background-color: #eb1010;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+
+        .button {
+            position: absolute;
+            margin-top: 50px;
+            width: 270px;
+            // height: 270px;
+            z-index: 2;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            padding: 1%;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            transition: border-color 0.5s,
+                background-color 0.5s, color 0.5s;
+
+        }
+
+        .button:hover {
+            background-color: white;
+            border-color: transparent;
+            color: #444;
+        }
+
+        .button:hover~.backgr {
+            opacity: 0;
+        }
+
+        .button:hover~.backgr2 {
+            opacity: 0.7;
+        }
+
+        .backgr,
+        .backgr2 {
+            position: absolute;
+            z-index: 1;
+            width: 280px;
+            height: 280px;
+            // background-repeat: no-repeat;
+            transition: opacity 1s;
+            cursor: pointer;
+
+        }
+
+        .backgr {
+            // background-image: url(../linls/yollStreetKi.jpg);
+            // background-size: cover;
+            // background-position: center;
+            overflow: hidden;
+            opacity: 10;
+
+        }
+
+        .backgr2 {
+            // background-image: url(../linls/yollStreetKi.jpg);
+            // background-size: cover;
+            // background-position: center;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        .cap {
+            width: 280px;
+            height: 280px;
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+// Основной Блок Позиции
+.main {
+    background-color: white;
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 10% repeat(4, 1fr) 10%;
+    grid-gap: 15px;
+
+
+    // Шапка с названием
+    .centerName {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: white;
+    }
+
+
+
+
+    // Левая часть. О авторе
+    .leftAutor {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 6;
+        background-color: white;
+    }
+
+    // Центральная Часть. Книга
+    .centerBook {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        background-color: rgb(24, 107, 202);
+
+        .imgBook {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+    // Центральная часть. Текст
+    .centerText {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        background-color: grey;
+
+        .bookInfo {
+            justify-items: center;
+        }
+    }
+
+    // Правая часть. Страницы 
+
+    .bookPages {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+}

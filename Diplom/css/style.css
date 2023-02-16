@@ -1,0 +1,231 @@
+body {
+  background-image: url(../linls/menu_back.jpg);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 4;
+  }
+  .burger ::after,
+  .burger ::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    top: 30px;
+  }
+  .burger ::before {
+    transform: translateY(10px);
+  }
+  .burger ::after {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 rgb(0, 0, 0);
+  }
+  .dws-menu {
+    position: fixed;
+    padding-top: 30px;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 50%;
+    background-color: #33bdf1;
+    z-index: 3;
+  }
+  .dws-menu ul.dws-ul {
+    flex-direction: column;
+  }
+}
+.dws-menu {
+  background-color: white;
+  margin: 10px auto 1px auto;
+  width: 100%;
+}
+.dws-menu ul.dws-ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.dws-menu ul.dws-ul li.dws-li {
+  list-style: none;
+  padding: 10px;
+}
+.dws-menu ul.dws-ul li.dws-li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+  padding: 5px;
+}
+.dws-menu ul.dws-ul li.dws-li a i {
+  margin-right: 10px;
+}
+.dws-menu ul.dws-ul li.dws-li a::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #33bdf1;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.dws-menu ul.dws-ul li.dws-li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ff2117;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.dws-menu ul.dws-ul :hover {
+  background-color: #e5eae8;
+}
+.dws-menu ul.dws-ul li.dws-li:hover a::before {
+  width: 50%;
+  transform: translateX(100%);
+}
+.dws-menu ul.dws-ul li.dws-li:hover a::after {
+  width: 50%;
+  transform: translateX(-100%);
+}
+.dws-menu ul.dws-ul li.dws-li a:hover {
+  color: #e62117;
+}
+
+.mainIndex {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.mainIndex .cube {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+.mainIndex .cube .button {
+  position: absolute;
+  margin-top: 50px;
+  width: 270px;
+  z-index: 2;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 1%;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+}
+.mainIndex .cube .button:hover {
+  background-color: white;
+  border-color: transparent;
+  color: #444;
+}
+.mainIndex .cube .button:hover ~ .backgr {
+  opacity: 0;
+}
+.mainIndex .cube .button:hover ~ .backgr2 {
+  opacity: 0.7;
+}
+.mainIndex .cube .backgr,
+.mainIndex .cube .backgr2 {
+  position: absolute;
+  z-index: 1;
+  width: 280px;
+  height: 280px;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+.mainIndex .cube .backgr {
+  overflow: hidden;
+  opacity: 10;
+}
+.mainIndex .cube .backgr2 {
+  overflow: hidden;
+  opacity: 0;
+}
+.mainIndex .cube .cap {
+  width: 280px;
+  height: 280px;
+}
+
+.main {
+  background-color: white;
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
+  grid-template-rows: 10% repeat(4, 1fr) 10%;
+  grid-gap: 15px;
+}
+.main .centerName {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: white;
+}
+.main .leftAutor {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background-color: white;
+}
+.main .centerBook {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-color: rgb(24, 107, 202);
+}
+.main .centerBook .imgBook {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.main .centerText {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  background-color: grey;
+}
+.main .centerText .bookInfo {
+  justify-items: center;
+}
+.main .bookPages {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+/*# sourceMappingURL=style.css.map */
